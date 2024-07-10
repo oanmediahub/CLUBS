@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    list-style: none;
+}
+.logo {
+    max-width: 50px;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(./wimg.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 4%;
+
+}
+nav a{
+    color: white;
+    font-size: x-large;
+    text-decoration: none;
+
+}
+nav a span{
+    color: white;
+}
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+.nav-links ul li{
+    display: inline-block;
+    margin: 5px 20px;
+}
+.nav-links ul li a{
+    font-size: 14px;
+    text-decoration: none;
+}
+.nav-links ul li a::after{
+    content: "";
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0%;
+    background-color: rgb(212, 46, 46);
+    transition: .6s;
+}
+.nav-links ul li a:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+font-size: 45px;
+}
+
+
+.text-box a{
+        font-size: 20px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 10px 40px;
+    border: 1px solid white;
+    margin-top: 10px;
+}
+.text-box a:hover{
+    background: rgb(212, 46, 46);
+    border: 1px solid white;
+
+}
+nav .fa-solid{
+    /*display: none;*/
+}
+
+@media (max-width: 660px){
+.text-box h1{
+    font-size: 32px;
+        }
+
+
+ .nav-links ul li{
+    display: block;
+     }
+ .nav-links{
+    position: absolute;
+    height: 100vh;
+    width: 200px;
+    background: rgb(0, 0, 0);
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+     }
+     nav .fa-solid{
+        display: block;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+     }
+}
+
+.drop-down
+{
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+}
+.drop-down ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+.drop-down il li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.drop-down ul li a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.sub-menu
+{
+    display: none;
+}
+.drop-down ul li:hover .sub-menu
+{
+    display: block;
+    position: absolute;
+    background-color: black;
+    margin-top: 15px;
+    margin-left: -15px;
+}

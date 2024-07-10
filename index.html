@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLUBS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <header>
+            <img src="logo1.png" alt="Logo" class="logo">
+            <a href="index.html">MEDIA<span>HUB</span></a>
+            </header>
+            <div class = "nav-links" id="navlinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                <div class="drop-down">
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="#">MEDIA HUB</a></li>
+                            <li><a href="#">FIRST AID</a></li>
+                            <li><a href="#">PEER COUNSELLING</a></li>
+                            <li><a href="#">BADMINTON</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                </ul>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">CLUBS</a></li>
+                    <li><a href="">EVENTS</a></li>
+                    <li><a href="">CREDITS</a></li>
+                    <li><a href="">REGISTER</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>OSHWAL ACADEMY NAIROBI SENIOR HIGH</h1>
+            <h1>CLUBS PORTAL</h1>
+            <a href="">Scroll down to check upcoming events</a>
+        </div>
+    </section>
+<script>
+    var navlinks = document.getElementById("navlinks");
+    function showMenu(){
+        navlinks.style.right = "0"
+    }
+    function hideMenu(){
+        navlinks.style.right = "-200px"
+    }
+</script>
+    
+</body>
+</html>
