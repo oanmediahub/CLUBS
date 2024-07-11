@@ -3,62 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
     <title>CLUBS</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    <section class="header">
-        <nav>
-            <header>
-            <img src="logo1.png" alt="Logo" class="logo">
-            <a href="index.html">MEDIA<span>HUB</span></a>
-            </header>
-            <div class = "nav-links" id="navlinks">
-                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
-                <ul>
-                <div class="drop-down">
-                    <div class="sub-menu">
-                        <ul>
-                            <li><a href="#">MEDIA HUB</a></li>
-                            <li><a href="#">FIRST AID</a></li>
-                            <li><a href="#">PEER COUNSELLING</a></li>
-                            <li><a href="#">BADMINTON</a></li>
-                        </ul>
-
-                    </div>
-                </div>
-                </ul>
-                <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">CLUBS</a></li>
-                    <li><a href="">EVENTS</a></li>
-                    <li><a href="">CREDITS</a></li>
-                    <li><a href="">REGISTER</a></li>
-                </ul>
-            </div>
-            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
-        </nav>
-        <div class="text-box">
-            <h1>OSHWAL ACADEMY NAIROBI SENIOR HIGH</h1>
-            <h1>CLUBS PORTAL</h1>
-            <a href="">Scroll down to check upcoming events</a>
+<header class="header">
+    <div class="logo">
+        <div class="icon">
+            <img src="logo1.png" width="50" height="50">
         </div>
-    </section>
-<script>
-    var navlinks = document.getElementById("navlinks");
-    function showMenu(){
-        navlinks.style.right = "0"
-    }
-    function hideMenu(){
-        navlinks.style.right = "-200px"
-    }
-</script>
+        <div>MEDIA HUB</div>
+    </div>
     
+
+        <nav class="menu">
+            <div class="head">
+
+                <button type="button" class="close-menu"></button>
+            </div>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li class="dropdown">
+                    <a href="#">ClUBS</a>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <ul class="sub-menu">
+                        <li class="dropdown">
+                            <a href="#"><span>WEDNESDAY</span></a>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <ul class="sub-menu sub-menu-right">
+                                <li><a href="#"><span>MEDIA HUB</span></a></li> 
+                                <li><a href="#"><span>FIRST AID</span></a></li>
+                                <li><a href="#"><span>PEER COUNSELLING</span></a></li>
+                                <li><a href="#"><span>BADMINTON</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#"><span>NON-WEDNESDAY</span></a>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <ul class="sub-menu sub-menu-right">
+                                <li><a href="#"><span>PA</span></a></li>
+                                <li><a href="#"><span>TOUCH OF HUMANITY</span></a></li>
+                                <li><a href="#"><span>MOUNTAINEERING</span></a></li>
+                                <li><a href="#"><span>ECO</span></a></li>
+                            </ul>
+                        </li>
+                    
+                        
+                    </ul>
+                </li>
+                <li><a href="#">EVENTS</a></li>
+                <li><a href="#">CREDITS</a></li>
+                <li><a href="#">REGISTER</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <button type="button" class="open-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    
+</header>
+<section class="MH">
+</section>
+
+ <script src="script.js"></script>   
+
 </body>
 </html>
